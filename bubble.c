@@ -10,7 +10,6 @@ int main(){
   printf("Before: \n");
   printValues(values);
 
-  // test swap
   int x = 3;
   int y = 5;
   printf("x: %d, y: %d \n", x, y);
