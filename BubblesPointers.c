@@ -24,16 +24,14 @@ int main(){
   return(0);
 } // end main
 
-void sort(int *arr, int n) {
-  int *ptr1, *ptr2;
-  int temp;
-  for (ptr1 = arr; ptr1 < arr + n - 1; ptr1++) {
-      for (ptr2 = arr; ptr2 < arr + n - (ptr1 - arr) - 1; ptr2++) {
-          if (*ptr2 > *(ptr2 + 1)) {
-              temp = *ptr2;
-              *ptr2 = *(ptr2 + 1);
-              *(ptr2 + 1) = temp;
-          }
-      }
-  }
-}
+def bubble_sort(values):
+    n = len(values)
+    for i in range(n-1):
+        for j in range(n-i-1):
+            if values[j] > values[j+1]:
+                values[j], values[j+1] = values[j+1], values[j]
+    return values
+
+values = [7, 3, 9, 4, 6, 1, 2, 8, 5]
+sorted_list = bubble_sort(values)
+print(sorted_list)

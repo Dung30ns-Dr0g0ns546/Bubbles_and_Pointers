@@ -1,0 +1,18 @@
+## Algorithm for Bubbles and Pointers
+
+# Data
+```
+Make a constant int called "Max," and make it 9
+```
+
+# main()
+```
+create "values" and array for values
+print "before"
+print all values in array
+
+make a test swap
+```
+
+# bubble_sort(values):
+create a len for "values"
